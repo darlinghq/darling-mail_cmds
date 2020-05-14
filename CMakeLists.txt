@@ -2,11 +2,6 @@ project(mail_cmds)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostdinc")
 
-include_directories(
-	${CMAKE_SOURCE_DIR}/src/libc/include/NetBSD
-	${CMAKE_SOURCE_DIR}/src/ncurses/include
-)
-
 add_darling_executable(mail
 	mail/aux.c
 	mail/cmdtab.c
